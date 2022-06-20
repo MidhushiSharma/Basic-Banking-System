@@ -1,0 +1,20 @@
+<%- include("header") -%>
+
+  <div class="box" id="heading">
+    <h1> <%= listTitle %> </h1>
+  </div>
+<div class="boddy" id="heading">
+    <h1 >Make Transactions!</h1>
+</div>
+<div class=" boddy">
+
+      <form action="/Transactions" class="form-signin" method= "post">
+  <input type="text" class=" top" name="fromm" placeholder="from">
+    <input type="text" class=" middle "name= "tto" placeholder="To" >
+    <input type="number" class=" bottom " name="amount" placeholder="Amount">
+
+    <a class="btn btn-lg btn-primary btn-block" type="submit" href="history">Transfer</a>
+  </form>
+  </div>
+
+<%- include("footer") -%>
